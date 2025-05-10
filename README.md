@@ -1,12 +1,17 @@
+## Overview 
+
 You have two solution one  based on DSE and the other on the colpali. 
 I build everything with local models in dual gpu setup if you have one GPU Vram larger than 24 you can run the both models on one gpu. 
+It's best to read the pdf analysis which contain better content.
 ****
 
-DSE Notebook: Multimodal Document Retrieval and Generation
+## DSE Notebook: Multimodal Document Retrieval and Generation
+
 Overview
 This notebook implements a multimodal system for document retrieval and question answering using VDRE (Vision-Document Retrieval Embedding) for image/text embeddings and Qwen2.5-VL for vision-language generation. It processes text and image queries to retrieve relevant document images and generate answers, evaluating retrieval (Precision@1, Recall@1) and generation (ROUGE-L, SBERT).
 Requirements
 
+### install 
 Python 3.19+
 
 Setup
@@ -20,7 +25,7 @@ nltk.download('punkt')
 
 Ensure CUDA-enabled GPU for VDRE (cuda:1) and Qwen2.5-VL (cuda:0).
 
-Usage
+### Usage
 
 Run the notebook to:
 Load images and generate embeddings using VDRE.
